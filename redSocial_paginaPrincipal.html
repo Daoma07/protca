@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>The Slap</title>
-        
-    </head>
-    <body>
-        <h1>Holaass</h1>
-    </body>
+<html>
+
+<head>
+    <title>Página con bloques estáticos y dinámicos</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container {
+            display: flex;
+            height: 100%;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: gray;
+        }
+
+        .content {
+            flex-grow: 1;
+            background-color: #eee;
+            border-radius: 20px;
+        }
+
+        .sidebar-left {
+            margin-right: 20px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .sidebar-right {
+            margin-left: 20px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebar-left">
+
+        </div>
+
+        <div class="content">
+
+        </div>
+
+        <div class="sidebar sidebar-right">
+
+        </div>
+    </div>
+</body>
+
 </html>
