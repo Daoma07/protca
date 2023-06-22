@@ -6,7 +6,9 @@ body {
 }
 
 .container {
+
     display: flex;
+
     height: 100%;
 }
 
@@ -34,8 +36,6 @@ body {
 
 }
 
-
-
 .sidebar-leftButton button:first-child {
     width: 100%;
     width: 100%;
@@ -44,7 +44,7 @@ body {
 }
 
 .content {
-
+    padding: 20px;
     flex-grow: 1;
     background-color: #eee;
     border-radius: 20px;
@@ -63,4 +63,15 @@ body {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     flex-grow: 0.30;
+}
+
+header {
+    padding: 20px;
+}
+
+header button {
+
+    color: white;
+    background-color: black;
+    border-radius: 5px;
 }
